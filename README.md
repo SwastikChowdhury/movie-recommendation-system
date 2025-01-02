@@ -1,6 +1,3 @@
-## Skynet Saviors
-<br> Ray Zeng <br> Swastik Chowdhury <br> Zhijie Xu <br> Aditya Narendra Kolpe <br> Siddharth Shah <br>
-
 ## Installation
 
 Clone:
@@ -31,18 +28,6 @@ Add the tmdb api to your .env file
 ```
 TMDB_API_KEY = "<api-key>"
 ```
-
-## Model Training and Prediction
-Enter the model diretory
-```
-cd recommendation-model
-```
-Random Forest Regressor
-```
-python3 recommendation-model/random_forest_model.py train
-python3 recommendation-model/random_forest_model.py predict
-```
-
 
 ## How to create get a TMDB API
 
