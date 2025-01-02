@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recommend-deployment
+spec:
+  replicas: 3  # Number of pods
+  selector:
+    matchLabels:
+      app: recommend
+  template:
+    metadata:
+      labels:
+        app: recommend
+    spec:
+      containers:
+        - name: recommend
+          image: recommend # Use the image name you built earlier
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8082
+          env:
+            - name: DB_PASSWORD
+              value: "SamplePassword"
+            - name: DB_NAME
+              value: "Sample_DB_Name"

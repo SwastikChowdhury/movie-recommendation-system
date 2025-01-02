@@ -1,0 +1,20 @@
+.env
+env
+
+#python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data files
+main/data/kafka_data_test.csv
+main/data/movies.csv
+main/data/user_recommendations.csv
+
+# Airflow runtime files
+airflow.db
+airflow-webserver.pid
+main/airflow/logs/
+
+# model files
+recommendation-model/
